@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex_01 - Array</title>
+    <style>
+        body{
+            background-color: rgb(114, 112, 112);
+        }
+        legend{
+            border: 1px solid;
+            padding: 5px;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 10px;
+            border: 1px solid;
+            border-radius: 5px;
+            background-color: rgb(255, 255, 255);
+        }
+        .container{
+            font: times 10pt ;
+        }
+
+        .button{
+            background-color: rgb(118, 238, 118);
+            padding: 3px;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #inIndice{
+            background-color: rgb(255, 66, 66) !important;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!--Adicionar Vetor-->
+        <fieldset class="box">
+            <legend>Array</legend>
+        <div>
+            <input type="number" class="inputUser" id="inInputNum" placeholder="Digite um número">
+            <input type="button" value="Inicio Vetor" class="button" id="inButtonInicio">
+            <input type="button" value="Fim Vetor" class="button" id="inButtonFim">
+            <input type="button" value="Zerar" class="button" id="inZerarButton">
+        </div>
+        <hr>
+        <!--Remover Vetor-->
+        <div>
+            <input type="number" class="inputUser" id="inIndiceInput" placeholder="Digite um indice">
+            <input type="button" value="Remover" class="button" id="inIndice">
+        </div>
+        <hr>
+        <!--Lista-->
+        <p>
+            <ol type="I" id="listarIndice">
+            </ol>
+        </p>
+    </fieldset>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
